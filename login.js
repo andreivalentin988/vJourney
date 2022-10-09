@@ -38,12 +38,12 @@ login.addEventListener("click", () => {
 
 //set user caracter limit for registration
 register.addEventListener("click", (inputtxt, minlength) => {
-  var field = inputtxt.value;
+  var field = inputtxt.user;
   var mnlen = minlength;
   // var mxlen = maxlength;
 
   if (field.length > mnlen) {
-    alert("Please input the userid between " + mnlen + " characters");
+    alert("Please input the userid with " + mnlen + " characters");
     return false;
   } else {
     login.addEventListener("click", () => {
