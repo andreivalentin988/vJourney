@@ -37,13 +37,14 @@ login.addEventListener("click", () => {
 });
 
 //set user caracter limit for registration
-register.addEventListener("click", (inputtxt, minlength) => {
-  var field = inputtxt.user;
-  var mnlen = minlength;
-  // var mxlen = maxlength;
+register.addEventListener("click", (e) => {
+  var field = e.target;
+  console.log(field);
+  var mnlen = e.target;
+  console.log(user.value.length);
 
-  if (field.length > mnlen) {
-    alert("Please input the userid with " + mnlen + " characters");
+  if (user.value.length < 6) {
+    alert("Please input the userid with " + "6" + " characters");
     return false;
   } else {
     login.addEventListener("click", () => {
