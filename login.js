@@ -47,7 +47,7 @@ register.addEventListener("click", (e) => {
     alert("Please input the userid with " + "6" + " characters");
     return false;
   } else {
-    login.addEventListener("click", () => {
+    register.addEventListener("click", () => {
       container.classList.remove("active");
     });
     return true;
