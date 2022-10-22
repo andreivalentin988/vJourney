@@ -48,17 +48,25 @@ register.addEventListener("click", (e) => {
     return false;
   }
   if (true) {
-    let name, email, password, date;
-    name = document.getElementById("user").value;
-    email = document.getElementById("email").value;
-    password = document.getElementById("password").value;
-    date = document.getElementById("Age").value;
-    localStorage.setItem("name", JSON.stringify(name));
-    localStorage.setItem("email", JSON.stringify(email));
-    localStorage.setItem("password", JSON.stringify(password));
-    localStorage.setItem("date", JSON.stringify(date));
+    // let name, email, password, date;
+    // name = document.getElementById("user").value;
+    // email = document.getElementById("email").value;
+    // password = document.getElementById("password").value;
+    // date = document.getElementById("Age").value;
+    // localStorage.setItem("name", JSON.stringify(name));
+    // localStorage.setItem("email", JSON.stringify(email));
+    // localStorage.setItem("password", JSON.stringify(password));
+    // localStorage.setItem("date", JSON.stringify(date));
+    let userData = [
+      { Username: document.getElementById("user").value },
+      { Email: document.getElementById("email").value },
+      { Password: document.getElementById("password").value },
+      { Date: document.getElementById("Age").value },
+    ];
+    localStorage.setItem("users", JSON.stringify(userData));
   }
 });
+
 // } else {
 //   register.addEventListener("click", () => {
 //     container.classList.remove("active");
