@@ -68,6 +68,7 @@
             <div class="input-field">
               <input
                 class="userName"
+                id="user"
                 type="text"
                 placeholder="Enter your name"
                 required
@@ -76,15 +77,22 @@
               <i class="uil uil-user"></i>
             </div>
             <div class="input-field">
-              <input type="text" placeholder="Enter your email" required />
+              <input
+                type="text"
+                placeholder="Enter your email"
+                id="email"
+                required
+              />
               <i class="uil uil-envelope icon"></i>
             </div>
             <div class="input-field">
               <input
+                id="password"
                 type="password"
                 class="password"
                 placeholder="Create a password"
                 required
+                minlength="6"
               />
               <i class="uil uil-lock icon"></i>
               <i class="uil uil-eye-slash showHide"></i>
@@ -92,15 +100,23 @@
 
             <div class="input-field">
               <input
+                id="password"
                 type="password"
                 class="password"
                 placeholder="Confirm a password"
                 required
+                minlength="6"
               />
               <i class="uil uil-lock icon"></i>
             </div>
             <div class="input-field">
-              <input type="date" placeholder="Enter your Age" required />
+              <input
+                type="date"
+                placeholder="Enter your Age"
+                class="age"
+                required
+                id="Age"
+              />
               <i class="uil uil-18-plus"></i>
             </div>
             <div class="checkbox-text">
