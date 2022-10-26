@@ -5,7 +5,7 @@ const container = document.querySelector(".container"),
   login = document.querySelector(".login-link"),
   register = document.querySelector(".registerBt"),
   userName = document.querySelector(".userName"),
-  pass = document.querySelectorAll(".password");
+  pass = document.querySelector(".password");
 
 // show/hide password
 pwShowHide.forEach((eyeIcon) => {
@@ -42,21 +42,16 @@ register.addEventListener("click", (e) => {
   let field = e.target;
   console.log(field);
   let mnlen = e.target;
+
   // let passLength = pass.value.length;
   if (userName.value.length < 6) {
-    alert("Please input the userid with 6  characters");
+    alert("Username should be at least 6 characters");
     return false;
   }
+  if (pass.value.length < 6) {
+    alert("Password should be at least 6 caraters");
+  }
   if (true) {
-    // let name, email, password, date;
-    // name = document.getElementById("user").value;
-    // email = document.getElementById("email").value;
-    // password = document.getElementById("password").value;
-    // date = document.getElementById("Age").value;
-    // localStorage.setItem("name", JSON.stringify(name));
-    // localStorage.setItem("email", JSON.stringify(email));
-    // localStorage.setItem("password", JSON.stringify(password));
-    // localStorage.setItem("date", JSON.stringify(date));
     let userData = [
       { Username: document.getElementById("user").value },
       { Email: document.getElementById("email").value },
@@ -64,13 +59,21 @@ register.addEventListener("click", (e) => {
       { Date: document.getElementById("Age").value },
     ];
     localStorage.setItem("users", JSON.stringify(userData));
+    register.addEventListener("click", () => {
+      container.classList.remove("active");
+    });
   }
 });
+// let name, email, password, date;
+// name = document.getElementById("user").value;
+// email = document.getElementById("email").value;
+// password = document.getElementById("password").value;
+// date = document.getElementById("Age").value;
+// localStorage.setItem("name", JSON.stringify(name));
+// localStorage.setItem("email", JSON.stringify(email));
+// localStorage.setItem("password", JSON.stringify(password));
+// localStorage.setItem("date", JSON.stringify(date));
 
-// } else {
-//   register.addEventListener("click", () => {
-//     container.classList.remove("active");
-//   });
 //   return true;
 // }
 // if (pass == "" || passLength > 5) {
@@ -80,8 +83,6 @@ register.addEventListener("click", (e) => {
 // } else {
 //   alert("Password must be atleast 6 caracters long");
 // }
-
-//local storage
 
 // var users = JSON.parse(localStorage.getItem("Users")) || [];
 // var userData = [
@@ -102,5 +103,3 @@ register.addEventListener("click", (e) => {
 //     email: "",
 //     age: "",
 //   };
-
-//   window.localStorage.setItem("", JSON.stringify(store));
