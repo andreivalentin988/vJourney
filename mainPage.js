@@ -18,8 +18,8 @@
 window.addEventListener("load", () => {
   const form = document.querySelector("#newTaskForm"),
     input = document.querySelector("#newTaskInput"),
-    input2 = document.querySelector("");
-  taskList = document.querySelector("#tasks");
+    input2 = document.querySelector("#newTaskInput2"),
+    taskList = document.querySelector("#tasks");
 
   form.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -35,19 +35,19 @@ window.addEventListener("load", () => {
 
     const taskContentElement = document.createElement("div");
     taskContentElement.classList.add("content");
-    taskContentElement.innerText = task;
+    // taskContentElement.innerText = task;
 
     const endInput = document.createElement("input");
-    startInput.classList.add("End");
-    startInput.innerText = task;
+    endInput.classList.add("End");
+    endInput.innerText = task;
 
     const profitInput = document.createElement("input");
-    startInput.classList.add("totalProfit");
-    startInput.innerText = task;
+    profitInput.classList.add("totalProfit");
+    profitInput.innerText = task;
 
     const startInput = document.createElement("input");
     startInput.classList.add("summary");
-    startInput.innerText = task;
+    endInput.innerText = task;
 
     taskElement.appendChild(taskContentElement);
     taskList.appendChild(taskElement);
