@@ -10,7 +10,46 @@
 }
 header {
   border-bottom: 3px solid black;
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+form .text {
+  font-size: 1.125rem;
+  transition: 0.4s;
+  border-radius: 10px;
+  position: relative;
+}
+form .hours {
+  font-size: 1.125rem;
+  transition: 0.4s;
+  border-radius: 10px;
+  position: relative;
+}
+form .profit {
+  font-size: 1.125rem;
+  transition: 0.4s;
+  border-radius: 10px;
+  position: relative;
+}
+form .description {
+  width: 25%;
   height: 100px;
+  transition: 0.4s;
+  border-radius: 10px;
+  position: relative;
+}
+form .button {
+  float: right;
+  cursor: pointer;
+  color: white;
+  background-color: #111827;
+  font-size: 25px;
+  border-radius: 10px;
+  margin: 0 2rem;
+  margin-top: 2rem;
+  box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.3);
 }
 body {
   display: flex;
@@ -33,24 +72,24 @@ label.logo {
   border-radius: 10px;
 }
 
-nav ul {
+/* form ul {
   float: right;
   margin-right: 20px;
 }
 
-nav ul li {
+form ul li {
   display: inline-block;
   line-height: 80px;
   margin: 0 5px;
 }
-nav ul li input {
+form ul li input {
   cursor: pointer;
   color: white;
   background-color: #111827;
   font-size: 20px;
   border-radius: 10px;
   box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.3);
-}
+} */
 /* .logo {
   display: block;
   max-width: 200px;
@@ -86,23 +125,23 @@ footer {
   box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.3);
   transition: 0.4s;
 }
-#tasks .task .content .text {
+#tasks .task .content .Start {
   font-size: 1.125rem;
   transition: 0.4s;
   border-radius: 10px;
 }
 
-#tasks .task .content .hours {
+#tasks .task .content .End {
   font-size: 1.125rem;
   transition: 0.4s;
   border-radius: 10px;
 }
-#tasks .task .content .profit {
+#tasks .task .content .totalProfit {
   font-size: 1.125rem;
   transition: 0.4s;
   border-radius: 10px;
 }
-#tasks .task .content .description {
+#tasks .task .content .summary {
   width: 631.2px;
   height: 100px;
   transition: 0.4s;
