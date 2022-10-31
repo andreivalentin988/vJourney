@@ -1,10 +1,16 @@
-const addTask = document.querySelector(".button"),
-  profile = document.querySelector(".User");
+window.addEventListener("load", () => {
+  const addTasks = document.querySelector(".button"),
+    taskSection = document.querySelector("#tasks");
 
-addTask.addEventListener("load", (e) => {
-  taskButton = e.target;
-  console.log(taskButton);
-  let div = document.createElement("div");
-  div.innerHTML = `
-  fasfa`;
+  addTasks.addEventListener("click", (e) => {
+    e.preventDefault();
+    let element = e.target;
+    console.log("element");
+    const taskAppear = document.createElement("div");
+    taskAppear.classList.add("task");
+    const taskContent = document.createElement("div");
+    taskContent.classList.add("content");
+    taskAppear.appendChild(taskContent);
+    taskSection.appendChild(taskAppear);
+  });
 });

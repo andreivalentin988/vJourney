@@ -10,7 +10,7 @@
   <body>
     <header class="header">
       <nav>
-        <label class="loggo">Benelux</label>
+        <label class="logo">Benelux</label>
         <ul>
           <li>
             <input type="button" name="" class="button" value="Add a task" />
@@ -28,9 +28,38 @@
         </ul>
       </nav>
     </header>
+
     <main>
-      <div class="task">fdsaf</div>
+      <section class="task-list">
+        <div id="tasks">
+          <div class="task">
+            <div class="content">
+              <input type="text" class="text" placeholder="My task for today" />
+              <input
+                type="text"
+                class="hours"
+                placeholder="Total hours worked"
+              />
+              <input
+                type="text"
+                class="profit"
+                placeholder="Total profit made"
+              />
+              <input
+                type="text"
+                class="description"
+                placeholder="Short description of the task"
+              />
+            </div>
+            <div class="actions">
+              <button class="edit">Edit</button>
+              <button class="delete">Delete</button>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+
     <footer></footer>
     <script src="mainPage.js"></script>
   </body>

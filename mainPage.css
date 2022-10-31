@@ -13,14 +13,16 @@ header {
   height: 100px;
 }
 body {
+  display: flex;
+  flex-direction: column;
   height: 100vh;
-  background: linear-gradient(190deg, white, #ff0000);
+  background: linear-gradient(190deg, white, #660000);
 }
 nav {
   /* background: #0082e6; */
   height: 80px;
 }
-label.loggo {
+label.logo {
   min-height: 99px;
   line-height: 80px;
   box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.3);
@@ -44,7 +46,7 @@ nav ul li {
 nav ul li input {
   cursor: pointer;
   color: white;
-  background-color: black;
+  background-color: #111827;
   font-size: 20px;
   border-radius: 10px;
   box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.3);
@@ -62,12 +64,74 @@ nav ul li input {
 
 main {
   height: 80vh;
-
-  width: 100%;
+  flex: 1 1 0%;
+  padding: 2rem 1rem;
+  max-width: 900px;
+  margin: 0 auto;
 }
 footer {
   height: 10vh;
 }
-.task {
-  height: 25%;
+.task-list {
+  padding: 1rem;
+}
+
+#tasks .task {
+  display: flex;
+  justify-content: space-between;
+  background-color: #111827;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.3);
+  transition: 0.4s;
+}
+#tasks .task .content .text {
+  font-size: 1.125rem;
+  transition: 0.4s;
+  border-radius: 10px;
+}
+
+#tasks .task .content .hours {
+  font-size: 1.125rem;
+  transition: 0.4s;
+  border-radius: 10px;
+}
+#tasks .task .content .profit {
+  font-size: 1.125rem;
+  transition: 0.4s;
+  border-radius: 10px;
+}
+#tasks .task .content .description {
+  width: 631.2px;
+  height: 100px;
+  transition: 0.4s;
+  border-radius: 10px;
+}
+
+#tasks .task .actions {
+  display: flex;
+  margin: 0 -0.5rem;
+}
+
+.task .actions button {
+  font-size: 1.125rem;
+  cursor: pointer;
+  margin: 0 0.5rem;
+  font-weight: 700;
+  margin-top: 40px;
+  text-transform: uppercase;
+  transition: 0.4s;
+  max-height: 50px;
+  background: none;
+  border: none;
+}
+
+.task .actions .edit {
+  background: linear-gradient(to right, pink, purple);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.task .actions .delete {
+  color: crimson;
 }

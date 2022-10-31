@@ -37,7 +37,7 @@ login.addEventListener("click", () => {
   container.classList.remove("active");
 });
 
-//set  caracter limit for registration
+//set  character limit for registration
 register.addEventListener("click", (e) => {
   let field = e.target;
   console.log(field);
@@ -48,9 +48,9 @@ register.addEventListener("click", (e) => {
     alert("Username should be at least 6 characters");
     return false;
   }
-  if (pass.value.length < 6) {
-    alert("Password should be at least 6 caraters");
-  }
+  // if (pass.value.length < 6) {
+  //   alert("Password should be at least 6 characters");
+  // }
   if (true) {
     let userData = [
       { Username: document.getElementById("user").value },
