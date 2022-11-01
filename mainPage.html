@@ -6,17 +6,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Benelux</title>
     <link rel="stylesheet" href="mainPage.css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
   </head>
   <body>
-    <header>
-      <form action="#">
-        <div class="header">
-          <h1 class="loggo">Benelux</h1>
-        </div>
-        <nav></nav>
+    <header class="header">
+      <form action="#" id="newTaskForm">
+        <label class="logo">Benelux</label>
+
+        <input
+          type="text"
+          id="newTaskInput1"
+          class="text"
+          placeholder="My task for today"
+        />
+        -
+        <input
+          type="text"
+          id="newTaskInput2"
+          class="hours"
+          placeholder="Total hours worked"
+        />
+        <input
+          type="text"
+          id="newTaskInput3"
+          class="profit"
+          placeholder="Total profit per shift"
+        />
+        <i class="uil uil-euro"></i>
+
+        <input
+          type="text"
+          id="newTaskInput4"
+          class="description"
+          placeholder="Short description of the shift place and task "
+        />
+
+        <input
+          type="submit"
+          name=""
+          id="newTaskInput"
+          class="button"
+          value="Add a task"
+        />
       </form>
+
+      <!-- <input
+        type="button"
+        name=""
+        id="User"
+        class="User"
+        value="Profile Name"
+      /> -->
     </header>
-    <main></main>
+
+    <main>
+      <section class="task-list">
+        <div id="tasks">
+          <!-- <div class="task">
+            <div class="content" >
+              <input
+                type="text"
+                class="Start"
+                placeholder="Start time"
+                readonly
+              />
+              <input
+                type="text"
+                class="End"
+                placeholder="Total hours worked"
+                readonly
+              />
+              <input
+                type="text"
+                class="totalProfit"
+                placeholder="Total profit made"
+                readonly
+              />
+              <input
+                type="text"
+                class="summary"
+                placeholder="Short description of the task"
+                readonly
+              />
+            </div>
+            <div class="actions">
+              <button class="edit">Edit</button>
+              <button class="delete">Delete</button>
+            </div>
+          </div> -->
+        </div>
+      </section>
+    </main>
+
     <footer></footer>
     <script src="mainPage.js"></script>
   </body>
