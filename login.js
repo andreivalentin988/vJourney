@@ -81,7 +81,7 @@ register.addEventListener("click", (e) => {
 //     container.classList.remove("active");
 //   });
 // } else {
-//   alert("Password must be atleast 6 caracters long");
+//   alert("Password must be at least 6 characters long");
 // }
 
 // var users = JSON.parse(localStorage.getItem("Users")) || [];
